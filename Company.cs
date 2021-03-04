@@ -25,16 +25,12 @@ namespace Classes
         {
             Name = nameOfCompany;
             Founded = dateFounded;
-
         }
 
         // Show Employees with a method
-        public void ShowEmployees(List<Employee> CurrentEmployees)
+        public void ShowEmployees(Employee employee)
         {
-            Console.WriteLine($"{CurrentEmployees}");
+            Console.WriteLine($"Method Option:\n{employee.FirstName} {employee.LastName} as a {employee.Title} since {employee.StartDate}.");
         }
-
-
-
     }
 }

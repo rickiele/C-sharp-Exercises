@@ -45,7 +45,6 @@ namespace Classes
             List<Employee> assignEmployees = new List<Employee>()
             {
                 hannah, pedro, rachel
-
             };
 
 
@@ -66,7 +65,10 @@ namespace Classes
                 Console.WriteLine($"{person.FirstName} {person.LastName} works for {happybabiesco.Name} as a {person.Title} since {person.StartDate}.");
             }
 
-            happybabiesco.ShowEmployees(assignEmployees);
+            // With a method and passing in argument
+            happybabiesco.ShowEmployees(rachel);
+            happybabiesco.ShowEmployees(pedro);
+            happybabiesco.ShowEmployees(hannah);
 
         }
     }
